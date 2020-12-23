@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SW_3PDT
+D Momentary Switch, dual pole double throw
+K switch dual-pole double-throw spdt ON-ON
+F ~
+$ENDCMP
+#
+$CMP batt_34s12p
+D Multiple-cell battery
+K batt voltage-source cell
+F ~
+$ENDCMP
+#
+$CMP contactor
+D Standex Meder DIP reed relay, SPST, Closing Contact
+K Single Pole Reed Relay SPST
+F https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf
+$ENDCMP
+#
+#End Doc Library
