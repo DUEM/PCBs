@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name lightsBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/lightsBoard-rescue.lib)(options "")(descr ""))
+)
