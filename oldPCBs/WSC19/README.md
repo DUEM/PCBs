@@ -1,2 +1,2 @@
 # WSC19
-KiCad will probably cry when you open these...
+Am going to try and put the original WSC19 design files in here. KiCad will probably cry when you open these... hopefully demonstrating why we're trying to use a global KiCad library instead now.
