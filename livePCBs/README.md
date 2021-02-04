@@ -1,5 +1,5 @@
 # PCBs
-A working record of DUSC PCBs.
+A working record of DUSC PCBs. I suggest the files and information in here reflect the current implementation installed in the car and any development happens in a branch and a pull request to `main` is only opened when the design is finalised.
 
 ## Contents
 There are two different main locations for PCBs on the car. Beware of the difference between `dash-power` and `batt-power`.
