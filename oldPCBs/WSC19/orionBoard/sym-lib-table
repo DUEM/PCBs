@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name orionBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/orionBoard-rescue.lib)(options "")(descr ""))
+)
