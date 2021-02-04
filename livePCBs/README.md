@@ -7,8 +7,9 @@ There are two different main locations for PCBs on the car. Beware of the differ
 __Dashboard:__
 * `dash-power`
 * `driver-controls`
-* `lights`
 * `telemetry`
+* `lights`
+  * `const_current` daughterboard
 
 __Battery Box:__
 * `batt-power`
