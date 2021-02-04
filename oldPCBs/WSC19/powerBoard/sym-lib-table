@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 555IC)(type Legacy)(uri ${KIPRJMOD}/555IC.lib)(options "")(descr ""))
+  (lib (name powerBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/powerBoard-rescue.lib)(options "")(descr ""))
+)
