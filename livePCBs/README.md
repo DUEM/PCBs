@@ -14,10 +14,10 @@ __Battery Box:__
 * `batt-power`
 * `orion-board`
 * `precharge-discharge` ?
-* `dc-dc` - _just plonked on some veroboard so not KiCad_
+* `dc-dc` - _just plonked on some veroboard so not in KiCad_
 
 ## Structure
-The `template` directory has a nice example file structure for the PCB design files following [this train of thought](https://www.youtube.com/watch?v=mwxCV6xGiVo):
+The `_template` directory has a nice example file structure for the PCB design files following [this train of thought](https://www.youtube.com/watch?v=mwxCV6xGiVo):
 
 ```
 foo
@@ -29,3 +29,4 @@ foo
  ↳lib_fp.pretty // footprints
  ↳pdf           // schematics, board layouts, dimension drawings
 ```
+You shouldn't need to use `lib_sch` or `lib_fp.pretty` too much because most components should be stored in the `duem-library` and **not** in the project libraries.
