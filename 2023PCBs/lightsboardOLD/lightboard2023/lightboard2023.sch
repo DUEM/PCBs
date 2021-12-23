@@ -1,0 +1,2337 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "DUEM Lights System Schematics"
+Date ""
+Rev "1/1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push_DPDT J1
+U 1 1 6056414E
+P 1450 1300
+F 0 "J1" H 1450 1785 50  0000 C CNN
+F 1 "Indicator " H 1450 1694 50  0000 C CNN
+F 2 "duem-footprints:flywire_5" H 1450 1300 50  0001 C CNN
+F 3 "~" H 1450 1300 50  0001 C CNN
+	1    1450 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 1000 2    50   Input ~ 0
+LeftSignal
+Text GLabel 1650 1200 2    50   Input ~ 0
+RightSignal
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 60565B53
+P 7500 1000
+F 0 "J5" H 7580 992 50  0000 L CNN
+F 1 "PowerConnector" H 7580 901 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_2Way_P2.5mm" H 7500 1000 50  0001 C CNN
+F 3 "~" H 7500 1000 50  0001 C CNN
+	1    7500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 60566880
+P 7100 1000
+F 0 "#PWR0101" H 7100 850 50  0001 C CNN
+F 1 "+12V" H 7115 1173 50  0000 C CNN
+F 2 "" H 7100 1000 50  0001 C CNN
+F 3 "" H 7100 1000 50  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1000 7300 1000
+$Comp
+L power:GND #PWR0102
+U 1 1 60566CAD
+P 7100 1100
+F 0 "#PWR0102" H 7100 850 50  0001 C CNN
+F 1 "GND" H 7105 927 50  0000 C CNN
+F 2 "" H 7100 1100 50  0001 C CNN
+F 3 "" H 7100 1100 50  0001 C CNN
+	1    7100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1100 7300 1100
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 605683FE
+P 7500 2200
+F 0 "J7" H 7580 2192 50  0000 L CNN
+F 1 "Front DS" H 7580 2101 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_4Way_P2.5mm" H 7500 2200 50  0001 C CNN
+F 3 "~" H 7500 2200 50  0001 C CNN
+	1    7500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 60568404
+P 7100 2100
+F 0 "#PWR0103" H 7100 1950 50  0001 C CNN
+F 1 "+12V" H 7115 2273 50  0000 C CNN
+F 2 "" H 7100 2100 50  0001 C CNN
+F 3 "" H 7100 2100 50  0001 C CNN
+	1    7100 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2100 7300 2100
+$Comp
+L power:GND #PWR0104
+U 1 1 6056840B
+P 7100 2400
+F 0 "#PWR0104" H 7100 2150 50  0001 C CNN
+F 1 "GND" H 7105 2227 50  0000 C CNN
+F 2 "" H 7100 2400 50  0001 C CNN
+F 3 "" H 7100 2400 50  0001 C CNN
+	1    7100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2400 7300 2400
+Text GLabel 7100 2200 0    50   Output ~ 0
+SignalHead
+Wire Wire Line
+	7100 2200 7300 2200
+Text GLabel 7100 2300 0    50   Output ~ 0
+SignalL
+Wire Wire Line
+	7100 2300 7300 2300
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 6056C0F2
+P 7500 3050
+F 0 "J8" H 7580 3042 50  0000 L CNN
+F 1 "FrontBS" H 7580 2951 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_4Way_P2.5mm" H 7580 2905 50  0001 L CNN
+F 3 "~" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0105
+U 1 1 6056C0F8
+P 7100 2950
+F 0 "#PWR0105" H 7100 2800 50  0001 C CNN
+F 1 "+12V" H 7115 3123 50  0000 C CNN
+F 2 "" H 7100 2950 50  0001 C CNN
+F 3 "" H 7100 2950 50  0001 C CNN
+	1    7100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2950 7300 2950
+$Comp
+L power:GND #PWR0106
+U 1 1 6056C0FF
+P 7100 3250
+F 0 "#PWR0106" H 7100 3000 50  0001 C CNN
+F 1 "GND" H 7105 3077 50  0000 C CNN
+F 2 "" H 7100 3250 50  0001 C CNN
+F 3 "" H 7100 3250 50  0001 C CNN
+	1    7100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3250 7300 3250
+Text GLabel 7100 3050 0    50   Output ~ 0
+SignalHead
+Wire Wire Line
+	7100 3050 7300 3050
+Text GLabel 7100 3150 0    50   Output ~ 0
+SignalR
+Wire Wire Line
+	7100 3150 7300 3150
+$Comp
+L power:GND #PWR0107
+U 1 1 6056F6B4
+P 2500 6800
+F 0 "#PWR0107" H 2500 6550 50  0001 C CNN
+F 1 "GND" H 2505 6627 50  0000 C CNN
+F 2 "" H 2500 6800 50  0001 C CNN
+F 3 "" H 2500 6800 50  0001 C CNN
+	1    2500 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 605701DB
+P 1600 6350
+F 0 "C2" H 1715 6396 50  0000 L CNN
+F 1 "0.01uF" H 1715 6305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1638 6200 50  0001 C CNN
+F 3 "~" H 1600 6350 50  0001 C CNN
+	1    1600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 605709F1
+P 800 6350
+F 0 "C1" H 915 6396 50  0000 L CNN
+F 1 "4.7uF" H 915 6305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 838 6200 50  0001 C CNN
+F 3 "~" H 800 6350 50  0001 C CNN
+	1    800  6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60571304
+P 800 5700
+F 0 "R2" H 870 5746 50  0000 L CNN
+F 1 "100k" H 870 5655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 730 5700 50  0001 C CNN
+F 3 "~" H 800 5700 50  0001 C CNN
+	1    800  5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6057381B
+P 800 5250
+F 0 "R1" H 870 5296 50  0000 L CNN
+F 1 "1k" H 870 5205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 730 5250 50  0001 C CNN
+F 3 "~" H 800 5250 50  0001 C CNN
+	1    800  5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  5400 800  5450
+Wire Wire Line
+	800  6800 1600 6800
+Wire Wire Line
+	1600 6800 1600 6500
+Connection ~ 1600 6800
+Connection ~ 2500 6800
+Wire Wire Line
+	1600 6200 1600 5700
+Wire Wire Line
+	800  6500 800  6800
+Wire Wire Line
+	800  6200 800  6150
+Wire Wire Line
+	1600 5700 2000 5700
+Wire Wire Line
+	2500 6100 2500 6800
+$Comp
+L lightboard2023-rescue:NE555-Timer-lightboard2023-rescue U1
+U 1 1 6056D3C0
+P 2500 5700
+F 0 "U1" H 2500 6281 50  0000 C CNN
+F 1 "NE555" H 2500 6190 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2500 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2500 5700 50  0001 C CNN
+	1    2500 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5300 1250 5100
+Wire Wire Line
+	1250 5100 800  5100
+Wire Wire Line
+	1250 5300 1800 5300
+Wire Wire Line
+	800  6150 1300 6150
+Wire Wire Line
+	1300 6150 1300 5500
+Wire Wire Line
+	1300 5500 2000 5500
+Connection ~ 800  6150
+Wire Wire Line
+	800  6150 800  5850
+Wire Wire Line
+	1300 6150 3000 6150
+Wire Wire Line
+	3000 6150 3000 5900
+Connection ~ 1300 6150
+Wire Wire Line
+	800  5450 1200 5450
+Wire Wire Line
+	1200 5450 1200 6500
+Wire Wire Line
+	1200 6500 1600 6500
+Wire Wire Line
+	3100 6500 3100 5700
+Wire Wire Line
+	3100 5700 3000 5700
+Connection ~ 800  5450
+Wire Wire Line
+	800  5450 800  5550
+Connection ~ 1600 6500
+Wire Wire Line
+	1600 6500 3100 6500
+Wire Wire Line
+	3000 5500 3250 5500
+Wire Wire Line
+	2000 5900 1800 5900
+Wire Wire Line
+	1800 5900 1800 5300
+Connection ~ 1800 5300
+Text GLabel 3250 5500 2    50   Input ~ 0
+FlashingSignal
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 6058DF12
+P 7500 1600
+F 0 "J6" H 7580 1592 50  0000 L CNN
+F 1 "BrakeSwitch" H 7580 1501 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_2Way_P2.5mm" H 7500 1600 50  0001 C CNN
+F 3 "~" H 7500 1600 50  0001 C CNN
+	1    7500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0108
+U 1 1 6058DF18
+P 7100 1600
+F 0 "#PWR0108" H 7100 1450 50  0001 C CNN
+F 1 "+12V" H 7115 1773 50  0000 C CNN
+F 2 "" H 7100 1600 50  0001 C CNN
+F 3 "" H 7100 1600 50  0001 C CNN
+	1    7100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1600 7300 1600
+Text GLabel 7100 1700 0    50   Input ~ 0
+BrakeSignal
+Wire Wire Line
+	7100 1700 7300 1700
+$Comp
+L duem-symbols:DK_Relay K1
+U 1 1 6058FBC1
+P 3450 1750
+F 0 "K1" V 2883 1750 50  0000 C CNN
+F 1 "DK_Relay" V 2974 1750 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 3800 1700 50  0001 L CNN
+F 3 "" H 3450 1750 50  0001 C CNN
+	1    3450 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L duem-symbols:DK_Relay K2
+U 1 1 60591F6C
+P 3450 3100
+F 0 "K2" V 2883 3100 50  0000 C CNN
+F 1 "DK_Relay" V 2974 3100 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 3800 3050 50  0001 L CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 3100 1550 0    50   Output ~ 0
+LeftSignal
+Text GLabel 3100 2900 0    50   Output ~ 0
+RightSignal
+$Comp
+L power:GND #PWR0109
+U 1 1 605977FE
+P 3750 2900
+F 0 "#PWR0109" H 3750 2650 50  0001 C CNN
+F 1 "GND" H 3755 2727 50  0000 C CNN
+F 2 "" H 3750 2900 50  0001 C CNN
+F 3 "" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60598CF5
+P 3750 1550
+F 0 "#PWR0110" H 3750 1300 50  0001 C CNN
+F 1 "GND" H 3755 1377 50  0000 C CNN
+F 2 "" H 3750 1550 50  0001 C CNN
+F 3 "" H 3750 1550 50  0001 C CNN
+	1    3750 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 1950 2    50   Input ~ 0
+SignalL
+Text GLabel 3750 3300 2    50   Input ~ 0
+SignalR
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 6059E728
+P 3400 4050
+F 0 "J3" H 3450 4467 50  0000 C CNN
+F 1 "UpperBoardHeader" H 3450 4376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3400 4050 50  0001 C CNN
+F 3 "~" H 3400 4050 50  0001 C CNN
+	1    3400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0111
+U 1 1 605A0652
+P 2950 3850
+F 0 "#PWR0111" H 2950 3700 50  0001 C CNN
+F 1 "+12V" H 2965 4023 50  0000 C CNN
+F 2 "" H 2950 3850 50  0001 C CNN
+F 3 "" H 2950 3850 50  0001 C CNN
+	1    2950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3850 3200 3850
+Wire Wire Line
+	3200 4050 3200 3950
+Connection ~ 3200 3850
+Connection ~ 3200 3950
+Wire Wire Line
+	3200 3950 3200 3850
+Connection ~ 3700 3950
+Wire Wire Line
+	3700 3950 3700 3850
+Wire Wire Line
+	3700 3950 3700 4050
+Wire Wire Line
+	3700 3850 4000 3850
+Connection ~ 3700 3850
+$Comp
+L power:GND #PWR0112
+U 1 1 605A668F
+P 4000 3850
+F 0 "#PWR0112" H 4000 3600 50  0001 C CNN
+F 1 "GND" H 4005 3677 50  0000 C CNN
+F 2 "" H 4000 3850 50  0001 C CNN
+F 3 "" H 4000 3850 50  0001 C CNN
+	1    4000 3850
+	-1   0    0    1   
+$EndComp
+Text GLabel 3700 4150 2    50   Output ~ 0
+SignalR
+Text GLabel 3700 4250 2    50   Output ~ 0
+SignalL
+Text GLabel 3200 4150 0    50   Output ~ 0
+BrakeSignal
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 605AC23A
+P 7500 4100
+F 0 "J9" H 7580 4142 50  0000 L CNN
+F 1 "Side Ind DS" H 7580 4051 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_3Way_P2.5mm" H 7500 4100 50  0001 C CNN
+F 3 "~" H 7500 4100 50  0001 C CNN
+	1    7500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0113
+U 1 1 605AC240
+P 7100 4000
+F 0 "#PWR0113" H 7100 3850 50  0001 C CNN
+F 1 "+12V" H 7115 4173 50  0000 C CNN
+F 2 "" H 7100 4000 50  0001 C CNN
+F 3 "" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4000 7300 4000
+$Comp
+L power:GND #PWR0114
+U 1 1 605AC247
+P 7100 4200
+F 0 "#PWR0114" H 7100 3950 50  0001 C CNN
+F 1 "GND" H 7105 4027 50  0000 C CNN
+F 2 "" H 7100 4200 50  0001 C CNN
+F 3 "" H 7100 4200 50  0001 C CNN
+	1    7100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4200 7300 4200
+Text GLabel 7100 4100 0    50   Output ~ 0
+SignalL
+Wire Wire Line
+	7100 4100 7300 4100
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 605B197A
+P 7500 4750
+F 0 "J10" H 7580 4792 50  0000 L CNN
+F 1 "Side Ind BS" H 7580 4701 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_3Way_P2.5mm" H 7500 4750 50  0001 C CNN
+F 3 "~" H 7500 4750 50  0001 C CNN
+	1    7500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0115
+U 1 1 605B1980
+P 7100 4650
+F 0 "#PWR0115" H 7100 4500 50  0001 C CNN
+F 1 "+12V" H 7115 4823 50  0000 C CNN
+F 2 "" H 7100 4650 50  0001 C CNN
+F 3 "" H 7100 4650 50  0001 C CNN
+	1    7100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4650 7300 4650
+$Comp
+L power:GND #PWR0116
+U 1 1 605B1987
+P 7100 4850
+F 0 "#PWR0116" H 7100 4600 50  0001 C CNN
+F 1 "GND" H 7105 4677 50  0000 C CNN
+F 2 "" H 7100 4850 50  0001 C CNN
+F 3 "" H 7100 4850 50  0001 C CNN
+	1    7100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4850 7300 4850
+Text GLabel 7100 4750 0    50   Output ~ 0
+SignalR
+Wire Wire Line
+	7100 4750 7300 4750
+$Comp
+L Connector_Generic:Conn_01x06 J11
+U 1 1 605B2733
+P 7500 5550
+F 0 "J11" H 7580 5542 50  0000 L CNN
+F 1 "Side Ind BS" H 7580 5451 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_6Way_P2.5mm" H 7500 5550 50  0001 C CNN
+F 3 "~" H 7500 5550 50  0001 C CNN
+	1    7500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0117
+U 1 1 605B2E4B
+P 7100 5350
+F 0 "#PWR0117" H 7100 5200 50  0001 C CNN
+F 1 "+12V" H 7115 5523 50  0000 C CNN
+F 2 "" H 7100 5350 50  0001 C CNN
+F 3 "" H 7100 5350 50  0001 C CNN
+	1    7100 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 605B337F
+P 7100 5850
+F 0 "#PWR0118" H 7100 5600 50  0001 C CNN
+F 1 "GND" H 7105 5677 50  0000 C CNN
+F 2 "" H 7100 5850 50  0001 C CNN
+F 3 "" H 7100 5850 50  0001 C CNN
+	1    7100 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 5550 0    50   Output ~ 0
+SignalR
+Text GLabel 7100 5450 0    50   Output ~ 0
+SignalL
+Text GLabel 7100 5650 0    50   Output ~ 0
+BrakeSignal
+Wire Wire Line
+	7100 5350 7300 5350
+Wire Wire Line
+	7300 5450 7100 5450
+Wire Wire Line
+	7300 5550 7100 5550
+Wire Wire Line
+	7300 5650 7200 5650
+Wire Wire Line
+	7200 5650 7200 5750
+Wire Wire Line
+	7200 5750 7300 5750
+Connection ~ 7200 5650
+Wire Wire Line
+	7200 5650 7100 5650
+Wire Wire Line
+	7100 5850 7300 5850
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 605BC58B
+P 5800 4950
+F 0 "J4" H 5850 5367 50  0000 C CNN
+F 1 "UpperBoardHeader" H 5850 5276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 5800 4950 50  0001 C CNN
+F 3 "~" H 5800 4950 50  0001 C CNN
+	1    5800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0119
+U 1 1 605BC591
+P 5350 4750
+F 0 "#PWR0119" H 5350 4600 50  0001 C CNN
+F 1 "+12V" H 5365 4923 50  0000 C CNN
+F 2 "" H 5350 4750 50  0001 C CNN
+F 3 "" H 5350 4750 50  0001 C CNN
+	1    5350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4750 5600 4750
+Wire Wire Line
+	5600 4950 5600 4850
+Connection ~ 5600 4750
+Connection ~ 5600 4850
+Wire Wire Line
+	5600 4850 5600 4750
+Connection ~ 6100 4850
+Wire Wire Line
+	6100 4850 6100 4750
+Wire Wire Line
+	6100 4850 6100 4950
+Wire Wire Line
+	6100 4750 6400 4750
+Connection ~ 6100 4750
+$Comp
+L power:GND #PWR0120
+U 1 1 605BC5A1
+P 6400 4750
+F 0 "#PWR0120" H 6400 4500 50  0001 C CNN
+F 1 "GND" H 6405 4577 50  0000 C CNN
+F 2 "" H 6400 4750 50  0001 C CNN
+F 3 "" H 6400 4750 50  0001 C CNN
+	1    6400 4750
+	-1   0    0    1   
+$EndComp
+Text GLabel 6100 5150 2    50   Input ~ 0
+SignalR
+Text GLabel 5600 5150 0    50   Input ~ 0
+SignalL
+Text GLabel 5600 5050 0    50   Input ~ 0
+BrakeSignal
+Wire Wire Line
+	1800 5300 2500 5300
+Text GLabel 1650 1400 2    50   Input ~ 0
+Ind12V
+NoConn ~ 1650 1600
+Text GLabel 1250 1100 0    50   Output ~ 0
+FlashingSignal
+$Comp
+L power:+12V #PWR0121
+U 1 1 605ED762
+P 1100 1500
+F 0 "#PWR0121" H 1100 1350 50  0001 C CNN
+F 1 "+12V" H 1115 1673 50  0000 C CNN
+F 2 "" H 1100 1500 50  0001 C CNN
+F 3 "" H 1100 1500 50  0001 C CNN
+	1    1100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1500 1250 1500
+$Comp
+L Device:D D1
+U 1 1 605F4892
+P 3450 1050
+F 0 "D1" H 3450 1266 50  0000 C CNN
+F 1 "D" H 3450 1175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3450 1050 50  0001 C CNN
+F 3 "~" H 3450 1050 50  0001 C CNN
+	1    3450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1050 3600 1050
+Wire Wire Line
+	3100 1550 3100 1050
+Wire Wire Line
+	3100 1550 3150 1550
+Wire Wire Line
+	3100 1050 3300 1050
+Wire Wire Line
+	3750 1050 3750 1550
+Connection ~ 3750 1550
+$Comp
+L Device:D D2
+U 1 1 6060118B
+P 3450 2400
+F 0 "D2" H 3450 2616 50  0000 C CNN
+F 1 "D" H 3450 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3450 2400 50  0001 C CNN
+F 3 "~" H 3450 2400 50  0001 C CNN
+	1    3450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2400 3600 2400
+Wire Wire Line
+	3100 2400 3300 2400
+Wire Wire Line
+	3750 2400 3750 2900
+Wire Wire Line
+	3100 2400 3100 2900
+Wire Wire Line
+	3100 2900 3150 2900
+Text GLabel 1650 2000 2    50   Input ~ 0
+LeftSignal
+Text GLabel 1650 2400 2    50   Input ~ 0
+RightSignal
+Text GLabel 1650 2800 2    50   Input ~ 0
+Ind12V
+NoConn ~ 1650 2600
+Text GLabel 1250 2100 0    50   Output ~ 0
+FlashingSignal
+$Comp
+L power:+12V #PWR0122
+U 1 1 6061808E
+P 1100 2900
+F 0 "#PWR0122" H 1100 2750 50  0001 C CNN
+F 1 "+12V" H 1115 3073 50  0000 C CNN
+F 2 "" H 1100 2900 50  0001 C CNN
+F 3 "" H 1100 2900 50  0001 C CNN
+	1    1100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2900 1250 2900
+Text GLabel 2500 5300 2    50   Output ~ 0
+Ind12V
+NoConn ~ 1650 2200
+NoConn ~ 1650 3000
+Text GLabel 1250 2500 0    50   Output ~ 0
+FlashingSignal
+$Comp
+L duem-symbols:SW_3PDT J2
+U 1 1 60618083
+P 1450 2300
+F 0 "J2" H 1450 2785 50  0000 C CNN
+F 1 "HazardLight Toggle" H 1450 2694 50  0000 C CNN
+F 2 "duem-footprints:flywire_6_special_haz" H 1450 2300 50  0001 C CNN
+F 3 "~" H 1450 2300 50  0001 C CNN
+	1    1450 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 6250 750  0    50   ~ 10
+Lower Board Connectors
+Wire Notes Line width 8
+	8200 3550 6200 3550
+Wire Notes Line width 8
+	6200 650  8200 650 
+Wire Notes Line
+	8200 3650 4600 3650
+Wire Notes Line
+	8200 6150 4600 6150
+Text Notes 5550 3750 2    50   ~ 0
+Upper Board Connectors
+Text Notes 5700 5550 2    50   ~ 0
+(Potential Canopy Light)\n
+Text Notes 7050 5800 2    50   ~ 0
+Canopy Light
+Text Notes 3150 4400 2    50   ~ 0
+(Potential \nCanopy Light)\n
+Text GLabel 1250 4550 0    50   Output ~ 0
+RightSignal
+Text GLabel 1250 4100 0    50   Output ~ 0
+LeftSignal
+$Comp
+L power:GND #PWR0123
+U 1 1 6065FB8B
+P 2250 4550
+F 0 "#PWR0123" H 2250 4300 50  0001 C CNN
+F 1 "GND" H 2255 4377 50  0000 C CNN
+F 2 "" H 2250 4550 50  0001 C CNN
+F 3 "" H 2250 4550 50  0001 C CNN
+	1    2250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 6066051C
+P 1550 4100
+F 0 "D3" H 1543 3845 50  0000 C CNN
+F 1 "LED" H 1543 3936 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 1550 4100 50  0001 C CNN
+F 3 "~" H 1550 4100 50  0001 C CNN
+	1    1550 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 60660D19
+P 1550 4550
+F 0 "D4" H 1543 4295 50  0000 C CNN
+F 1 "LED" H 1543 4386 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 1550 4550 50  0001 C CNN
+F 3 "~" H 1550 4550 50  0001 C CNN
+	1    1550 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60660F86
+P 2000 4100
+F 0 "R3" V 1793 4100 50  0000 C CNN
+F 1 "1k" V 1884 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1930 4100 50  0001 C CNN
+F 3 "~" H 2000 4100 50  0001 C CNN
+	1    2000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 606617C9
+P 2000 4550
+F 0 "R4" V 1793 4550 50  0000 C CNN
+F 1 "1k" V 1884 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1930 4550 50  0001 C CNN
+F 3 "~" H 2000 4550 50  0001 C CNN
+	1    2000 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 4100 1250 4100
+Wire Wire Line
+	1400 4550 1250 4550
+Wire Wire Line
+	1700 4100 1850 4100
+Wire Wire Line
+	2150 4100 2250 4100
+Wire Wire Line
+	2250 4100 2250 4550
+Wire Wire Line
+	2150 4550 2250 4550
+Connection ~ 2250 4550
+Wire Wire Line
+	1700 4550 1850 4550
+$Comp
+L power:+12V #PWR0124
+U 1 1 60679559
+P 3000 1950
+F 0 "#PWR0124" H 3000 1800 50  0001 C CNN
+F 1 "+12V" H 3015 2123 50  0000 C CNN
+F 2 "" H 3000 1950 50  0001 C CNN
+F 3 "" H 3000 1950 50  0001 C CNN
+	1    3000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1950 3150 1950
+$Comp
+L power:+12V #PWR0125
+U 1 1 6067D7CB
+P 3000 3300
+F 0 "#PWR0125" H 3000 3150 50  0001 C CNN
+F 1 "+12V" H 3015 3473 50  0000 C CNN
+F 2 "" H 3000 3300 50  0001 C CNN
+F 3 "" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3300 3150 3300
+Connection ~ 3750 2900
+Wire Notes Line
+	600  4900 3950 4900
+Wire Notes Line
+	3950 4900 3950 7200
+Wire Notes Line
+	3950 7200 600  7200
+Wire Notes Line
+	600  7200 600  4900
+Text Notes 1450 5000 2    50   ~ 0
+Flashing Sub-Circuit
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 60553511
+P 10650 1800
+F 0 "K?" V 10083 1800 50  0000 C CNN
+F 1 "Indicator" V 10174 1800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 11000 1750 50  0001 L CNN
+F 3 "" H 10650 1800 50  0001 C CNN
+	1    10650 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 6055BF03
+P 9000 2350
+F 0 "J?" H 9080 2342 50  0000 L CNN
+F 1 "Front DS" H 9080 2251 50  0000 L CNN
+F 2 "duem-footprints:flywire_4" H 9000 2350 50  0001 C CNN
+F 3 "~" H 9000 2350 50  0001 C CNN
+	1    9000 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6055BF10
+P 9400 2450
+F 0 "#PWR?" H 9400 2200 50  0001 C CNN
+F 1 "GND" H 9405 2277 50  0000 C CNN
+F 2 "" H 9400 2450 50  0001 C CNN
+F 3 "" H 9400 2450 50  0001 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2450 9200 2450
+Text GLabel 9400 2350 2    50   Output ~ 0
+SignalHead
+Wire Wire Line
+	9400 2250 9200 2250
+Text GLabel 9400 2250 2    50   Output ~ 0
+SignalL
+Wire Wire Line
+	9400 2350 9200 2350
+Text GLabel 10300 1600 0    50   Output ~ 0
+SignalL
+Wire Wire Line
+	9400 2150 9200 2150
+$Comp
+L power:+12V #PWR?
+U 1 1 6055BF09
+P 9400 2150
+F 0 "#PWR?" H 9400 2000 50  0001 C CNN
+F 1 "+12V" H 9415 2323 50  0000 C CNN
+F 2 "" H 9400 2150 50  0001 C CNN
+F 3 "" H 9400 2150 50  0001 C CNN
+	1    9400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 605846DE
+P 10150 2000
+F 0 "#PWR?" H 10150 1850 50  0001 C CNN
+F 1 "+12V" H 10165 2173 50  0000 C CNN
+F 2 "" H 10150 2000 50  0001 C CNN
+F 3 "" H 10150 2000 50  0001 C CNN
+	1    10150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2000 10350 2000
+$Comp
+L power:GND #PWR?
+U 1 1 6058ACE6
+P 10950 1600
+F 0 "#PWR?" H 10950 1350 50  0001 C CNN
+F 1 "GND" H 10955 1427 50  0000 C CNN
+F 2 "" H 10950 1600 50  0001 C CNN
+F 3 "" H 10950 1600 50  0001 C CNN
+	1    10950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6058E323
+P 11300 2000
+F 0 "R?" V 11093 2000 50  0000 C CNN
+F 1 "1k" V 11184 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11230 2000 50  0001 C CNN
+F 3 "~" H 11300 2000 50  0001 C CNN
+	1    11300 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6058EDD7
+P 11650 2000
+F 0 "D?" H 11643 1745 50  0000 C CNN
+F 1 "LED" H 11643 1836 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 11650 2000 50  0001 C CNN
+F 3 "~" H 11650 2000 50  0001 C CNN
+	1    11650 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11450 2000 11500 2000
+Wire Wire Line
+	10950 2000 11150 2000
+Connection ~ 10950 1600
+Wire Notes Line
+	8500 800  12100 800 
+Wire Notes Line
+	12100 3500 8500 3500
+Wire Wire Line
+	11900 1600 11900 2000
+Wire Wire Line
+	11900 2000 11800 2000
+Wire Wire Line
+	10950 1600 11900 1600
+Text Notes 8550 900  0    50   ~ 0
+Front DS Board\n
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 605B6745
+P 10650 3100
+F 0 "K?" V 10083 3100 50  0000 C CNN
+F 1 "Headlight/ Brake" V 10174 3100 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 11000 3050 50  0001 L CNN
+F 3 "" H 10650 3100 50  0001 C CNN
+	1    10650 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 10300 2900 0    50   Output ~ 0
+SignalHead
+$Comp
+L power:+12V #PWR?
+U 1 1 605B674C
+P 10150 3300
+F 0 "#PWR?" H 10150 3150 50  0001 C CNN
+F 1 "+12V" H 10165 3473 50  0000 C CNN
+F 2 "" H 10150 3300 50  0001 C CNN
+F 3 "" H 10150 3300 50  0001 C CNN
+	1    10150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3300 10350 3300
+$Comp
+L power:GND #PWR?
+U 1 1 605B6753
+P 10950 2900
+F 0 "#PWR?" H 10950 2650 50  0001 C CNN
+F 1 "GND" H 10955 2727 50  0000 C CNN
+F 2 "" H 10950 2900 50  0001 C CNN
+F 3 "" H 10950 2900 50  0001 C CNN
+	1    10950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 605B675A
+P 11300 3300
+F 0 "R?" V 11093 3300 50  0000 C CNN
+F 1 "1k" V 11184 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11230 3300 50  0001 C CNN
+F 3 "~" H 11300 3300 50  0001 C CNN
+	1    11300 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 605B6760
+P 11650 3300
+F 0 "D?" H 11643 3045 50  0000 C CNN
+F 1 "LED" H 11643 3136 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 11650 3300 50  0001 C CNN
+F 3 "~" H 11650 3300 50  0001 C CNN
+	1    11650 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11450 3300 11500 3300
+Wire Wire Line
+	10950 3300 11150 3300
+Connection ~ 10950 2900
+Wire Wire Line
+	11900 2900 11900 3300
+Wire Wire Line
+	11900 3300 11800 3300
+Wire Wire Line
+	10950 2900 11900 2900
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 605F4FB3
+P 10650 5850
+F 0 "K?" V 10083 5850 50  0000 C CNN
+F 1 "Indicator" V 10174 5850 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 11000 5800 50  0001 L CNN
+F 3 "" H 10650 5850 50  0001 C CNN
+	1    10650 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 605F4FB9
+P 9000 6200
+F 0 "J?" H 9080 6192 50  0000 L CNN
+F 1 "Front DS" H 9080 6101 50  0000 L CNN
+F 2 "duem-footprints:flywire_4" H 9000 6200 50  0001 C CNN
+F 3 "~" H 9000 6200 50  0001 C CNN
+	1    9000 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 605F4FBF
+P 9400 6300
+F 0 "#PWR?" H 9400 6050 50  0001 C CNN
+F 1 "GND" H 9405 6127 50  0000 C CNN
+F 2 "" H 9400 6300 50  0001 C CNN
+F 3 "" H 9400 6300 50  0001 C CNN
+	1    9400 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 6300 9200 6300
+Text GLabel 9400 6200 2    50   Output ~ 0
+SignalHead
+Wire Wire Line
+	9400 6100 9200 6100
+Text GLabel 9400 6100 2    50   Output ~ 0
+SignalR
+Wire Wire Line
+	9400 6200 9200 6200
+Text GLabel 10300 5650 0    50   Output ~ 0
+SignalR
+Wire Wire Line
+	9400 6000 9200 6000
+$Comp
+L power:+12V #PWR?
+U 1 1 605F4FCC
+P 9400 6000
+F 0 "#PWR?" H 9400 5850 50  0001 C CNN
+F 1 "+12V" H 9415 6173 50  0000 C CNN
+F 2 "" H 9400 6000 50  0001 C CNN
+F 3 "" H 9400 6000 50  0001 C CNN
+	1    9400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 605F4FD2
+P 10150 6050
+F 0 "#PWR?" H 10150 5900 50  0001 C CNN
+F 1 "+12V" H 10165 6223 50  0000 C CNN
+F 2 "" H 10150 6050 50  0001 C CNN
+F 3 "" H 10150 6050 50  0001 C CNN
+	1    10150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 6050 10350 6050
+$Comp
+L power:GND #PWR?
+U 1 1 605F4FD9
+P 10950 5650
+F 0 "#PWR?" H 10950 5400 50  0001 C CNN
+F 1 "GND" H 10955 5477 50  0000 C CNN
+F 2 "" H 10950 5650 50  0001 C CNN
+F 3 "" H 10950 5650 50  0001 C CNN
+	1    10950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 605F4FE0
+P 11300 6050
+F 0 "R?" V 11093 6050 50  0000 C CNN
+F 1 "1k" V 11184 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11230 6050 50  0001 C CNN
+F 3 "~" H 11300 6050 50  0001 C CNN
+	1    11300 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 605F4FE6
+P 11650 6050
+F 0 "D?" H 11643 5795 50  0000 C CNN
+F 1 "LED" H 11643 5886 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 11650 6050 50  0001 C CNN
+F 3 "~" H 11650 6050 50  0001 C CNN
+	1    11650 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11450 6050 11500 6050
+Wire Wire Line
+	10950 6050 11150 6050
+Connection ~ 10950 5650
+Wire Notes Line
+	8500 5000 12100 5000
+Wire Wire Line
+	11900 6050 11800 6050
+Wire Wire Line
+	10950 5650 11900 5650
+Text Notes 8550 5100 0    50   ~ 0
+Rear DS Board\n
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 605F4FF5
+P 10650 7250
+F 0 "K?" V 10083 7250 50  0000 C CNN
+F 1 "Headlight/ Brake" V 10174 7250 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 11000 7200 50  0001 L CNN
+F 3 "" H 10650 7250 50  0001 C CNN
+	1    10650 7250
+	0    1    1    0   
+$EndComp
+Text GLabel 10300 7050 0    50   Output ~ 0
+SignalHead
+$Comp
+L power:+12V #PWR?
+U 1 1 605F4FFC
+P 10150 7450
+F 0 "#PWR?" H 10150 7300 50  0001 C CNN
+F 1 "+12V" H 10165 7623 50  0000 C CNN
+F 2 "" H 10150 7450 50  0001 C CNN
+F 3 "" H 10150 7450 50  0001 C CNN
+	1    10150 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 7450 10350 7450
+$Comp
+L power:GND #PWR?
+U 1 1 605F5003
+P 10950 7050
+F 0 "#PWR?" H 10950 6800 50  0001 C CNN
+F 1 "GND" H 10955 6877 50  0000 C CNN
+F 2 "" H 10950 7050 50  0001 C CNN
+F 3 "" H 10950 7050 50  0001 C CNN
+	1    10950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 605F500A
+P 11300 7450
+F 0 "R?" V 11093 7450 50  0000 C CNN
+F 1 "1k" V 11184 7450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11230 7450 50  0001 C CNN
+F 3 "~" H 11300 7450 50  0001 C CNN
+	1    11300 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 605F5010
+P 11650 7450
+F 0 "D?" H 11643 7195 50  0000 C CNN
+F 1 "LED" H 11643 7286 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 11650 7450 50  0001 C CNN
+F 3 "~" H 11650 7450 50  0001 C CNN
+	1    11650 7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11450 7450 11500 7450
+Wire Wire Line
+	10950 7450 11150 7450
+Connection ~ 10950 7050
+Wire Wire Line
+	11900 7050 11900 7450
+Wire Wire Line
+	11900 7450 11800 7450
+Wire Wire Line
+	10950 7050 11900 7050
+$Comp
+L Switch:SW_Push_SPDT J?
+U 1 1 605F9B2B
+P 1450 3450
+F 0 "J?" H 1450 3750 50  0000 C CNN
+F 1 "HeadLights" H 1450 3650 50  0000 C BNN
+F 2 "duem-footprints:flywire_3" H 1450 3450 50  0001 C CNN
+F 3 "~" H 1450 3450 50  0001 C CNN
+	1    1450 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1650 3550
+Text GLabel 1650 3350 2    50   Input ~ 0
+SignalHead
+$Comp
+L power:+12V #PWR?
+U 1 1 6062A5A5
+P 1100 3450
+F 0 "#PWR?" H 1100 3300 50  0001 C CNN
+F 1 "+12V" H 1115 3623 50  0000 C CNN
+F 2 "" H 1100 3450 50  0001 C CNN
+F 3 "" H 1100 3450 50  0001 C CNN
+	1    1100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3450 1250 3450
+$Comp
+L Device:D D?
+U 1 1 6063C25C
+P 10650 1100
+F 0 "D?" H 10650 1316 50  0000 C CNN
+F 1 "D" H 10650 1225 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10650 1100 50  0001 C CNN
+F 3 "~" H 10650 1100 50  0001 C CNN
+	1    10650 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 1100 10800 1100
+Wire Wire Line
+	10350 1100 10500 1100
+Wire Wire Line
+	10950 1100 10950 1600
+Wire Notes Line
+	8500 800  8500 3500
+Wire Notes Line
+	12100 800  12100 3500
+Wire Wire Line
+	10300 1600 10350 1600
+Wire Wire Line
+	10350 1100 10350 1600
+Connection ~ 10350 1600
+Wire Wire Line
+	10300 2900 10350 2900
+$Comp
+L Device:D D?
+U 1 1 606B3E83
+P 10650 2400
+F 0 "D?" H 10650 2616 50  0000 C CNN
+F 1 "D" H 10650 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10650 2400 50  0001 C CNN
+F 3 "~" H 10650 2400 50  0001 C CNN
+	1    10650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 2400 10800 2400
+Wire Wire Line
+	10350 2400 10500 2400
+Wire Wire Line
+	10950 2400 10950 2900
+Wire Wire Line
+	10350 2400 10350 2900
+Wire Wire Line
+	10300 5650 10350 5650
+Wire Notes Line
+	8500 7700 12100 7700
+Wire Wire Line
+	11900 5650 11900 6050
+$Comp
+L Device:D D?
+U 1 1 60715F0D
+P 10650 5150
+F 0 "D?" H 10650 5366 50  0000 C CNN
+F 1 "D" H 10650 5275 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10650 5150 50  0001 C CNN
+F 3 "~" H 10650 5150 50  0001 C CNN
+	1    10650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 5150 10800 5150
+Wire Wire Line
+	10350 5150 10500 5150
+Wire Wire Line
+	10950 5150 10950 5650
+Wire Wire Line
+	10350 5150 10350 5650
+$Comp
+L Device:D D?
+U 1 1 6071BBC1
+P 10650 6550
+F 0 "D?" H 10650 6766 50  0000 C CNN
+F 1 "D" H 10650 6675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10650 6550 50  0001 C CNN
+F 3 "~" H 10650 6550 50  0001 C CNN
+	1    10650 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 6550 10800 6550
+Wire Wire Line
+	10350 6550 10500 6550
+Wire Wire Line
+	10950 6550 10950 7050
+Wire Wire Line
+	10350 6550 10350 7050
+Wire Wire Line
+	10300 7050 10350 7050
+Connection ~ 10350 7050
+Wire Notes Line
+	600  4800 2400 4800
+Wire Notes Line
+	2400 600  600  600 
+Text Notes 600  700  0    50   ~ 0
+Dash Mounted Components\n
+Connection ~ 10350 5650
+Wire Notes Line
+	6200 3550 6200 650 
+Wire Notes Line
+	6200 650  6250 650 
+Wire Notes Line
+	8200 3550 8200 650 
+Text GLabel 9300 8550 2    50   Output ~ 0
+BrakeSignal
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 607EE89F
+P 10700 8750
+F 0 "K?" V 10133 8750 50  0000 C CNN
+F 1 "Brake" V 10224 8750 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 11050 8700 50  0001 L CNN
+F 3 "" H 10700 8750 50  0001 C CNN
+	1    10700 8750
+	0    1    1    0   
+$EndComp
+Text GLabel 10350 8550 0    50   Output ~ 0
+BrakeSignal
+$Comp
+L power:+12V #PWR?
+U 1 1 607EE8A6
+P 10200 8950
+F 0 "#PWR?" H 10200 8800 50  0001 C CNN
+F 1 "+12V" H 10215 9123 50  0000 C CNN
+F 2 "" H 10200 8950 50  0001 C CNN
+F 3 "" H 10200 8950 50  0001 C CNN
+	1    10200 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 8950 10400 8950
+$Comp
+L power:GND #PWR?
+U 1 1 607EE8AD
+P 11000 8550
+F 0 "#PWR?" H 11000 8300 50  0001 C CNN
+F 1 "GND" H 11005 8377 50  0000 C CNN
+F 2 "" H 11000 8550 50  0001 C CNN
+F 3 "" H 11000 8550 50  0001 C CNN
+	1    11000 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607EE8B3
+P 11350 8950
+F 0 "R?" V 11143 8950 50  0000 C CNN
+F 1 "1k" V 11234 8950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11280 8950 50  0001 C CNN
+F 3 "~" H 11350 8950 50  0001 C CNN
+	1    11350 8950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 607EE8B9
+P 11700 8950
+F 0 "D?" H 11693 8695 50  0000 C CNN
+F 1 "LED" H 11693 8786 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 11700 8950 50  0001 C CNN
+F 3 "~" H 11700 8950 50  0001 C CNN
+	1    11700 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11500 8950 11550 8950
+Wire Wire Line
+	11000 8950 11200 8950
+Connection ~ 11000 8550
+Wire Wire Line
+	11950 8550 11950 8950
+Wire Wire Line
+	11950 8950 11850 8950
+Wire Wire Line
+	11000 8550 11950 8550
+$Comp
+L Device:D D?
+U 1 1 607EE8C5
+P 10700 8050
+F 0 "D?" H 10700 8266 50  0000 C CNN
+F 1 "D" H 10700 8175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10700 8050 50  0001 C CNN
+F 3 "~" H 10700 8050 50  0001 C CNN
+	1    10700 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 8050 10850 8050
+Wire Wire Line
+	10400 8050 10550 8050
+Wire Wire Line
+	11000 8050 11000 8550
+Wire Wire Line
+	10350 8550 10400 8550
+Wire Wire Line
+	10400 8050 10400 8550
+Connection ~ 10400 8550
+Wire Notes Line
+	12100 7750 12100 9150
+Text Notes 8550 7950 0    50   ~ 0
+Canopy Light Board\n\n
+Connection ~ 10350 2900
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 608D77E5
+P 14300 1800
+F 0 "K?" V 13733 1800 50  0000 C CNN
+F 1 "Indicator" V 13824 1800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 14650 1750 50  0001 L CNN
+F 3 "" H 14300 1800 50  0001 C CNN
+	1    14300 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 608D77EB
+P 12650 2350
+F 0 "J?" H 12730 2342 50  0000 L CNN
+F 1 "Front DS" H 12730 2251 50  0000 L CNN
+F 2 "duem-footprints:flywire_4" H 12650 2350 50  0001 C CNN
+F 3 "~" H 12650 2350 50  0001 C CNN
+	1    12650 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608D77F1
+P 13050 2450
+F 0 "#PWR?" H 13050 2200 50  0001 C CNN
+F 1 "GND" H 13055 2277 50  0000 C CNN
+F 2 "" H 13050 2450 50  0001 C CNN
+F 3 "" H 13050 2450 50  0001 C CNN
+	1    13050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 2450 12850 2450
+Text GLabel 13050 2350 2    50   Output ~ 0
+BrakeSignal
+Wire Wire Line
+	13050 2250 12850 2250
+Text GLabel 13050 2250 2    50   Output ~ 0
+SignalL
+Wire Wire Line
+	13050 2350 12850 2350
+Text GLabel 13950 1600 0    50   Output ~ 0
+SignalL
+Wire Wire Line
+	13050 2150 12850 2150
+$Comp
+L power:+12V #PWR?
+U 1 1 608D77FE
+P 13050 2150
+F 0 "#PWR?" H 13050 2000 50  0001 C CNN
+F 1 "+12V" H 13065 2323 50  0000 C CNN
+F 2 "" H 13050 2150 50  0001 C CNN
+F 3 "" H 13050 2150 50  0001 C CNN
+	1    13050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 608D7804
+P 13800 2000
+F 0 "#PWR?" H 13800 1850 50  0001 C CNN
+F 1 "+12V" H 13815 2173 50  0000 C CNN
+F 2 "" H 13800 2000 50  0001 C CNN
+F 3 "" H 13800 2000 50  0001 C CNN
+	1    13800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 2000 14000 2000
+$Comp
+L power:GND #PWR?
+U 1 1 608D780B
+P 14600 1600
+F 0 "#PWR?" H 14600 1350 50  0001 C CNN
+F 1 "GND" H 14605 1427 50  0000 C CNN
+F 2 "" H 14600 1600 50  0001 C CNN
+F 3 "" H 14600 1600 50  0001 C CNN
+	1    14600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608D7811
+P 14950 2000
+F 0 "R?" V 14743 2000 50  0000 C CNN
+F 1 "1k" V 14834 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14880 2000 50  0001 C CNN
+F 3 "~" H 14950 2000 50  0001 C CNN
+	1    14950 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 608D7817
+P 15300 2000
+F 0 "D?" H 15293 1745 50  0000 C CNN
+F 1 "LED" H 15293 1836 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 15300 2000 50  0001 C CNN
+F 3 "~" H 15300 2000 50  0001 C CNN
+	1    15300 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15100 2000 15150 2000
+Wire Wire Line
+	14600 2000 14800 2000
+Connection ~ 14600 1600
+Wire Notes Line
+	12150 800  15750 800 
+Wire Notes Line
+	15750 3500 12150 3500
+Wire Wire Line
+	15550 1600 15550 2000
+Wire Wire Line
+	15550 2000 15450 2000
+Wire Wire Line
+	14600 1600 15550 1600
+Text Notes 12200 900  0    50   ~ 0
+Rear DS Board\n
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 608D7826
+P 14300 3100
+F 0 "K?" V 13733 3100 50  0000 C CNN
+F 1 "Headlight/ Brake" V 13824 3100 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 14650 3050 50  0001 L CNN
+F 3 "" H 14300 3100 50  0001 C CNN
+	1    14300 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 13950 2900 0    50   Output ~ 0
+BrakeSignal
+$Comp
+L power:+12V #PWR?
+U 1 1 608D782D
+P 13800 3300
+F 0 "#PWR?" H 13800 3150 50  0001 C CNN
+F 1 "+12V" H 13815 3473 50  0000 C CNN
+F 2 "" H 13800 3300 50  0001 C CNN
+F 3 "" H 13800 3300 50  0001 C CNN
+	1    13800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 3300 14000 3300
+$Comp
+L power:GND #PWR?
+U 1 1 608D7834
+P 14600 2900
+F 0 "#PWR?" H 14600 2650 50  0001 C CNN
+F 1 "GND" H 14605 2727 50  0000 C CNN
+F 2 "" H 14600 2900 50  0001 C CNN
+F 3 "" H 14600 2900 50  0001 C CNN
+	1    14600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608D783A
+P 14950 3300
+F 0 "R?" V 14743 3300 50  0000 C CNN
+F 1 "1k" V 14834 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14880 3300 50  0001 C CNN
+F 3 "~" H 14950 3300 50  0001 C CNN
+	1    14950 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 608D7840
+P 15300 3300
+F 0 "D?" H 15293 3045 50  0000 C CNN
+F 1 "LED" H 15293 3136 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 15300 3300 50  0001 C CNN
+F 3 "~" H 15300 3300 50  0001 C CNN
+	1    15300 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15100 3300 15150 3300
+Wire Wire Line
+	14600 3300 14800 3300
+Connection ~ 14600 2900
+Wire Wire Line
+	15550 2900 15550 3300
+Wire Wire Line
+	15550 3300 15450 3300
+Wire Wire Line
+	14600 2900 15550 2900
+$Comp
+L Device:D D?
+U 1 1 608D784C
+P 14300 1100
+F 0 "D?" H 14300 1316 50  0000 C CNN
+F 1 "D" H 14300 1225 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 14300 1100 50  0001 C CNN
+F 3 "~" H 14300 1100 50  0001 C CNN
+	1    14300 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 1100 14450 1100
+Wire Wire Line
+	14000 1100 14150 1100
+Wire Wire Line
+	14600 1100 14600 1600
+Wire Notes Line
+	12150 800  12150 3500
+Wire Notes Line
+	15750 800  15750 3500
+Wire Wire Line
+	13950 1600 14000 1600
+Wire Wire Line
+	14000 1100 14000 1600
+Connection ~ 14000 1600
+Wire Wire Line
+	13950 2900 14000 2900
+$Comp
+L Device:D D?
+U 1 1 608D785B
+P 14300 2400
+F 0 "D?" H 14300 2616 50  0000 C CNN
+F 1 "D" H 14300 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 14300 2400 50  0001 C CNN
+F 3 "~" H 14300 2400 50  0001 C CNN
+	1    14300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 2400 14450 2400
+Wire Wire Line
+	14000 2400 14150 2400
+Wire Wire Line
+	14600 2400 14600 2900
+Wire Wire Line
+	14000 2400 14000 2900
+Connection ~ 14000 2900
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 608FC7A1
+P 14300 6000
+F 0 "K?" V 13733 6000 50  0000 C CNN
+F 1 "Indicator" V 13824 6000 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 14650 5950 50  0001 L CNN
+F 3 "" H 14300 6000 50  0001 C CNN
+	1    14300 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 608FC7A7
+P 12650 6550
+F 0 "J?" H 12730 6542 50  0000 L CNN
+F 1 "Front DS" H 12730 6451 50  0000 L CNN
+F 2 "duem-footprints:flywire_4" H 12650 6550 50  0001 C CNN
+F 3 "~" H 12650 6550 50  0001 C CNN
+	1    12650 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608FC7AD
+P 13050 6650
+F 0 "#PWR?" H 13050 6400 50  0001 C CNN
+F 1 "GND" H 13055 6477 50  0000 C CNN
+F 2 "" H 13050 6650 50  0001 C CNN
+F 3 "" H 13050 6650 50  0001 C CNN
+	1    13050 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 6650 12850 6650
+Text GLabel 13050 6550 2    50   Output ~ 0
+BrakeSignal
+Wire Wire Line
+	13050 6450 12850 6450
+Text GLabel 13050 6450 2    50   Output ~ 0
+SignalR
+Wire Wire Line
+	13050 6550 12850 6550
+Text GLabel 13950 5800 0    50   Output ~ 0
+SignalR
+Wire Wire Line
+	13050 6350 12850 6350
+$Comp
+L power:+12V #PWR?
+U 1 1 608FC7BA
+P 13050 6350
+F 0 "#PWR?" H 13050 6200 50  0001 C CNN
+F 1 "+12V" H 13065 6523 50  0000 C CNN
+F 2 "" H 13050 6350 50  0001 C CNN
+F 3 "" H 13050 6350 50  0001 C CNN
+	1    13050 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 608FC7C0
+P 13800 6200
+F 0 "#PWR?" H 13800 6050 50  0001 C CNN
+F 1 "+12V" H 13815 6373 50  0000 C CNN
+F 2 "" H 13800 6200 50  0001 C CNN
+F 3 "" H 13800 6200 50  0001 C CNN
+	1    13800 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 6200 14000 6200
+$Comp
+L power:GND #PWR?
+U 1 1 608FC7C7
+P 14600 5800
+F 0 "#PWR?" H 14600 5550 50  0001 C CNN
+F 1 "GND" H 14605 5627 50  0000 C CNN
+F 2 "" H 14600 5800 50  0001 C CNN
+F 3 "" H 14600 5800 50  0001 C CNN
+	1    14600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608FC7CD
+P 14950 6200
+F 0 "R?" V 14743 6200 50  0000 C CNN
+F 1 "1k" V 14834 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14880 6200 50  0001 C CNN
+F 3 "~" H 14950 6200 50  0001 C CNN
+	1    14950 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 608FC7D3
+P 15300 6200
+F 0 "D?" H 15293 5945 50  0000 C CNN
+F 1 "LED" H 15293 6036 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 15300 6200 50  0001 C CNN
+F 3 "~" H 15300 6200 50  0001 C CNN
+	1    15300 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15100 6200 15150 6200
+Wire Wire Line
+	14600 6200 14800 6200
+Connection ~ 14600 5800
+Wire Notes Line
+	12150 5000 15750 5000
+Wire Notes Line
+	15750 7700 12150 7700
+Wire Wire Line
+	15550 5800 15550 6200
+Wire Wire Line
+	15550 6200 15450 6200
+Wire Wire Line
+	14600 5800 15550 5800
+Text Notes 12200 5100 0    50   ~ 0
+Rear BS Board\n
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 608FC7E2
+P 14300 7300
+F 0 "K?" V 13733 7300 50  0000 C CNN
+F 1 "Headlight/ Brake" V 13824 7300 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 14650 7250 50  0001 L CNN
+F 3 "" H 14300 7300 50  0001 C CNN
+	1    14300 7300
+	0    1    1    0   
+$EndComp
+Text GLabel 13950 7100 0    50   Output ~ 0
+BrakeSignal
+$Comp
+L power:+12V #PWR?
+U 1 1 608FC7E9
+P 13800 7500
+F 0 "#PWR?" H 13800 7350 50  0001 C CNN
+F 1 "+12V" H 13815 7673 50  0000 C CNN
+F 2 "" H 13800 7500 50  0001 C CNN
+F 3 "" H 13800 7500 50  0001 C CNN
+	1    13800 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 7500 14000 7500
+$Comp
+L power:GND #PWR?
+U 1 1 608FC7F0
+P 14600 7100
+F 0 "#PWR?" H 14600 6850 50  0001 C CNN
+F 1 "GND" H 14605 6927 50  0000 C CNN
+F 2 "" H 14600 7100 50  0001 C CNN
+F 3 "" H 14600 7100 50  0001 C CNN
+	1    14600 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608FC7F6
+P 14950 7500
+F 0 "R?" V 14743 7500 50  0000 C CNN
+F 1 "1k" V 14834 7500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14880 7500 50  0001 C CNN
+F 3 "~" H 14950 7500 50  0001 C CNN
+	1    14950 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 608FC7FC
+P 15300 7500
+F 0 "D?" H 15293 7245 50  0000 C CNN
+F 1 "LED" H 15293 7336 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 15300 7500 50  0001 C CNN
+F 3 "~" H 15300 7500 50  0001 C CNN
+	1    15300 7500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15100 7500 15150 7500
+Wire Wire Line
+	14600 7500 14800 7500
+Connection ~ 14600 7100
+Wire Wire Line
+	15550 7100 15550 7500
+Wire Wire Line
+	15550 7500 15450 7500
+Wire Wire Line
+	14600 7100 15550 7100
+$Comp
+L Device:D D?
+U 1 1 608FC808
+P 14300 5300
+F 0 "D?" H 14300 5516 50  0000 C CNN
+F 1 "D" H 14300 5425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 14300 5300 50  0001 C CNN
+F 3 "~" H 14300 5300 50  0001 C CNN
+	1    14300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 5300 14450 5300
+Wire Wire Line
+	14000 5300 14150 5300
+Wire Wire Line
+	14600 5300 14600 5800
+Wire Notes Line
+	12150 5000 12150 7700
+Wire Notes Line
+	15750 5000 15750 7700
+Wire Wire Line
+	13950 5800 14000 5800
+Wire Wire Line
+	14000 5300 14000 5800
+Connection ~ 14000 5800
+Wire Wire Line
+	13950 7100 14000 7100
+$Comp
+L Device:D D?
+U 1 1 608FC817
+P 14300 6600
+F 0 "D?" H 14300 6816 50  0000 C CNN
+F 1 "D" H 14300 6725 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 14300 6600 50  0001 C CNN
+F 3 "~" H 14300 6600 50  0001 C CNN
+	1    14300 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 6600 14450 6600
+Wire Wire Line
+	14000 6600 14150 6600
+Wire Wire Line
+	14600 6600 14600 7100
+Wire Wire Line
+	14000 6600 14000 7100
+Connection ~ 14000 7100
+Wire Notes Line
+	4600 3650 4600 6150
+Wire Notes Line
+	8200 3650 8200 6150
+Wire Notes Line
+	8500 5000 8500 7700
+Wire Notes Line
+	12100 5000 12100 7700
+Wire Notes Line
+	600  4800 600  600 
+Wire Notes Line
+	2400 600  2400 4800
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 60B6060A
+P 8900 8550
+F 0 "J?" H 8980 8592 50  0000 L CNN
+F 1 "Canopy" H 8980 8501 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_3Way_P2.5mm" H 8900 8550 50  0001 C CNN
+F 3 "~" H 8900 8550 50  0001 C CNN
+	1    8900 8550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60B60610
+P 9300 8450
+F 0 "#PWR?" H 9300 8300 50  0001 C CNN
+F 1 "+12V" H 9300 8600 50  0000 C CNN
+F 2 "" H 9300 8450 50  0001 C CNN
+F 3 "" H 9300 8450 50  0001 C CNN
+	1    9300 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 8650 9100 8650
+$Comp
+L power:GND #PWR?
+U 1 1 60B60617
+P 9300 8650
+F 0 "#PWR?" H 9300 8400 50  0001 C CNN
+F 1 "GND" H 9305 8477 50  0000 C CNN
+F 2 "" H 9300 8650 50  0001 C CNN
+F 3 "" H 9300 8650 50  0001 C CNN
+	1    9300 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 8450 9100 8450
+Wire Wire Line
+	9300 8550 9100 8550
+Wire Notes Line
+	8500 7750 12100 7750
+Wire Notes Line
+	12100 9150 8500 9150
+Wire Notes Line
+	8500 7750 8500 9150
+Wire Notes Line width 20 style dash_dot rgb(255, 0, 0)
+	15900 9350 15900 650 
+Wire Notes Line width 20 style dash_dot rgb(255, 0, 0)
+	8350 9350 8350 650 
+Wire Notes Line width 20 style dash_dot rgb(255, 0, 0)
+	8350 9350 15900 9350
+Wire Notes Line width 20 style dash_dot rgb(255, 0, 0)
+	8350 650  15900 650 
+Wire Wire Line
+	1600 6800 2500 6800
+Text Notes 12200 3650 0    50   ~ 0
+BS Side Ind Board\n
+Wire Notes Line
+	12150 4950 12150 3550
+Wire Notes Line
+	15750 4950 12150 4950
+Wire Notes Line
+	15750 3550 15750 4950
+Wire Notes Line
+	12150 3550 15750 3550
+Connection ~ 14000 4350
+Wire Wire Line
+	14000 3850 14000 4350
+Wire Wire Line
+	13950 4350 14000 4350
+Wire Wire Line
+	14600 3850 14600 4350
+Wire Wire Line
+	14000 3850 14150 3850
+Wire Wire Line
+	14600 3850 14450 3850
+$Comp
+L Device:D D?
+U 1 1 607E2AD0
+P 14300 3850
+F 0 "D?" H 14300 4066 50  0000 C CNN
+F 1 "D" H 14300 3975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 14300 3850 50  0001 C CNN
+F 3 "~" H 14300 3850 50  0001 C CNN
+	1    14300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 4350 15550 4350
+Wire Wire Line
+	15550 4750 15450 4750
+Wire Wire Line
+	15550 4350 15550 4750
+Connection ~ 14600 4350
+Wire Wire Line
+	14600 4750 14800 4750
+Wire Wire Line
+	15100 4750 15150 4750
+$Comp
+L Device:LED D?
+U 1 1 607E2AC4
+P 15300 4750
+F 0 "D?" H 15293 4495 50  0000 C CNN
+F 1 "LED" H 15293 4586 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 15300 4750 50  0001 C CNN
+F 3 "~" H 15300 4750 50  0001 C CNN
+	1    15300 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607E2ABE
+P 14950 4750
+F 0 "R?" V 14743 4750 50  0000 C CNN
+F 1 "1k" V 14834 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 14880 4750 50  0001 C CNN
+F 3 "~" H 14950 4750 50  0001 C CNN
+	1    14950 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607E2AB8
+P 14600 4350
+F 0 "#PWR?" H 14600 4100 50  0001 C CNN
+F 1 "GND" H 14605 4177 50  0000 C CNN
+F 2 "" H 14600 4350 50  0001 C CNN
+F 3 "" H 14600 4350 50  0001 C CNN
+	1    14600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 4750 14000 4750
+$Comp
+L power:+12V #PWR?
+U 1 1 607E2AB1
+P 13800 4750
+F 0 "#PWR?" H 13800 4600 50  0001 C CNN
+F 1 "+12V" H 13815 4923 50  0000 C CNN
+F 2 "" H 13800 4750 50  0001 C CNN
+F 3 "" H 13800 4750 50  0001 C CNN
+	1    13800 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 13950 4350 0    50   Output ~ 0
+SignalR
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 607E2AAA
+P 14300 4550
+F 0 "K?" V 13733 4550 50  0000 C CNN
+F 1 "Indicator" V 13824 4550 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 14650 4500 50  0001 L CNN
+F 3 "" H 14300 4550 50  0001 C CNN
+	1    14300 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13250 4350 13050 4350
+Text GLabel 13250 4350 2    50   Output ~ 0
+SignalR
+Wire Wire Line
+	13250 4250 13050 4250
+$Comp
+L power:GND #PWR?
+U 1 1 607E2AA1
+P 13250 4450
+F 0 "#PWR?" H 13250 4200 50  0001 C CNN
+F 1 "GND" H 13255 4277 50  0000 C CNN
+F 2 "" H 13250 4450 50  0001 C CNN
+F 3 "" H 13250 4450 50  0001 C CNN
+	1    13250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 4450 13050 4450
+$Comp
+L power:+12V #PWR?
+U 1 1 607E2A9A
+P 13250 4250
+F 0 "#PWR?" H 13250 4100 50  0001 C CNN
+F 1 "+12V" H 13265 4423 50  0000 C CNN
+F 2 "" H 13250 4250 50  0001 C CNN
+F 3 "" H 13250 4250 50  0001 C CNN
+	1    13250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 607E2A94
+P 12850 4350
+F 0 "J?" H 12930 4392 50  0000 L CNN
+F 1 "Side Ind DS" H 12930 4301 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_3Way_P2.5mm" H 12850 4350 50  0001 C CNN
+F 3 "~" H 12850 4350 50  0001 C CNN
+	1    12850 4350
+	-1   0    0    1   
+$EndComp
+Text Notes 8550 3650 0    50   ~ 0
+DS Side Ind Board\n
+Wire Notes Line
+	8500 4950 8500 3550
+Wire Notes Line
+	12100 4950 8500 4950
+Wire Notes Line
+	12100 3550 12100 4950
+Wire Notes Line
+	8500 3550 12100 3550
+Connection ~ 10250 4350
+Wire Wire Line
+	10250 3850 10250 4350
+Wire Wire Line
+	10200 4350 10250 4350
+Wire Wire Line
+	10850 3850 10850 4350
+Wire Wire Line
+	10250 3850 10400 3850
+Wire Wire Line
+	10850 3850 10700 3850
+$Comp
+L Device:D D?
+U 1 1 6079547C
+P 10550 3850
+F 0 "D?" H 10550 4066 50  0000 C CNN
+F 1 "D" H 10550 3975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10550 3850 50  0001 C CNN
+F 3 "~" H 10550 3850 50  0001 C CNN
+	1    10550 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4350 11800 4350
+Wire Wire Line
+	11800 4750 11700 4750
+Wire Wire Line
+	11800 4350 11800 4750
+Connection ~ 10850 4350
+Wire Wire Line
+	10850 4750 11050 4750
+Wire Wire Line
+	11350 4750 11400 4750
+$Comp
+L Device:LED D?
+U 1 1 60795470
+P 11550 4750
+F 0 "D?" H 11543 4495 50  0000 C CNN
+F 1 "LED" H 11543 4586 50  0000 C CNN
+F 2 "duem-footprints:flywire_2" H 11550 4750 50  0001 C CNN
+F 3 "~" H 11550 4750 50  0001 C CNN
+	1    11550 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6079546A
+P 11200 4750
+F 0 "R?" V 10993 4750 50  0000 C CNN
+F 1 "1k" V 11084 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11130 4750 50  0001 C CNN
+F 3 "~" H 11200 4750 50  0001 C CNN
+	1    11200 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60795464
+P 10850 4350
+F 0 "#PWR?" H 10850 4100 50  0001 C CNN
+F 1 "GND" H 10855 4177 50  0000 C CNN
+F 2 "" H 10850 4350 50  0001 C CNN
+F 3 "" H 10850 4350 50  0001 C CNN
+	1    10850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4750 10250 4750
+$Comp
+L power:+12V #PWR?
+U 1 1 6079545D
+P 10050 4750
+F 0 "#PWR?" H 10050 4600 50  0001 C CNN
+F 1 "+12V" H 10065 4923 50  0000 C CNN
+F 2 "" H 10050 4750 50  0001 C CNN
+F 3 "" H 10050 4750 50  0001 C CNN
+	1    10050 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10200 4350 0    50   Output ~ 0
+SignalL
+$Comp
+L duem-symbols:DK_Relay K?
+U 1 1 60795456
+P 10550 4550
+F 0 "K?" V 9983 4550 50  0000 C CNN
+F 1 "Indicator" V 10074 4550 50  0000 C CNN
+F 2 "Relay_THT:Relay_DK1a-12V-F" H 10900 4500 50  0001 L CNN
+F 3 "" H 10550 4550 50  0001 C CNN
+	1    10550 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9500 4350 9300 4350
+Text GLabel 9500 4350 2    50   Output ~ 0
+SignalL
+Wire Wire Line
+	9500 4250 9300 4250
+$Comp
+L power:GND #PWR?
+U 1 1 6078C553
+P 9500 4450
+F 0 "#PWR?" H 9500 4200 50  0001 C CNN
+F 1 "GND" H 9505 4277 50  0000 C CNN
+F 2 "" H 9500 4450 50  0001 C CNN
+F 3 "" H 9500 4450 50  0001 C CNN
+	1    9500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4450 9300 4450
+$Comp
+L power:+12V #PWR?
+U 1 1 6078C54C
+P 9500 4250
+F 0 "#PWR?" H 9500 4100 50  0001 C CNN
+F 1 "+12V" H 9500 4400 50  0000 C CNN
+F 2 "" H 9500 4250 50  0001 C CNN
+F 3 "" H 9500 4250 50  0001 C CNN
+	1    9500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 6078C546
+P 9100 4350
+F 0 "J?" H 9180 4392 50  0000 L CNN
+F 1 "Side Ind DS" H 9180 4301 50  0000 L CNN
+F 2 "duem-footprints:Phoenix_3Way_P2.5mm" H 9100 4350 50  0001 C CNN
+F 3 "~" H 9100 4350 50  0001 C CNN
+	1    9100 4350
+	-1   0    0    1   
+$EndComp
+Text Notes 14500 9300 0    118  ~ 0
+Satellite Boards\n
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 60579E12
+P 600 10150
+F 0 "H?" H 700 10196 50  0000 L CNN
+F 1 "MountingHole" H 700 10105 50  0000 L CNN
+F 2 "duem-footprints:MountingHole_2.7mm" H 600 10150 50  0001 C CNN
+F 3 "~" H 600 10150 50  0001 C CNN
+	1    600  10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6059B17B
+P 600 10300
+F 0 "H?" H 700 10346 50  0000 L CNN
+F 1 "MountingHole" H 700 10255 50  0000 L CNN
+F 2 "duem-footprints:MountingHole_2.7mm" H 600 10300 50  0001 C CNN
+F 3 "~" H 600 10300 50  0001 C CNN
+	1    600  10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6059B2E7
+P 600 10450
+F 0 "H?" H 700 10496 50  0000 L CNN
+F 1 "MountingHole" H 700 10405 50  0000 L CNN
+F 2 "duem-footprints:MountingHole_2.7mm" H 600 10450 50  0001 C CNN
+F 3 "~" H 600 10450 50  0001 C CNN
+	1    600  10450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6059B402
+P 600 10600
+F 0 "H?" H 700 10646 50  0000 L CNN
+F 1 "MountingHole" H 700 10555 50  0000 L CNN
+F 2 "duem-footprints:MountingHole_2.7mm" H 600 10600 50  0001 C CNN
+F 3 "~" H 600 10600 50  0001 C CNN
+	1    600  10600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6100 5050
+NoConn ~ -3400 -400
+NoConn ~ 7650 6550
+$EndSCHEMATC

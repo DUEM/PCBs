@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name lightboard2023-cache)(type Legacy)(uri ${KIPRJMOD}/lightboard2023-cache.lib)(options "")(descr ""))
+  (lib (name lightboard2023-rescue)(type Legacy)(uri ${KIPRJMOD}/lightboard2023-rescue.lib)(options "")(descr ""))
+)
